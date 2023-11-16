@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;}
+body {
+    background: linear-gradient(
+        90deg,
+        rgba(48, 16, 255, 1) 0%,
+        rgba(100, 115, 255, 1) 100%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 520px;
+    min-height: 600px;
+    background: #161a2b;
+    padding: 30px;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.app-title {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    margin-bottom: 32px;
+}
+
+.form-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 10px;
+    padding-left: 2rem;
+}
+.form-input {
+    
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+}
+.form-btn {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: #ffffff;
+    border-radius: 10px;
+    font-style: inherit;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.todo-item:nth-child(4n + 1) {
+        background: linear-gradient(90deg,
+        rgba(93, 12, 255, 1) 0%,
+        rgba(155, 0, 250, 1) 100%
+    );
+    }
+    .todo-item:nth-child(4n + 2) {
+    background: linear-gradient(90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+    );
+} 
+.todo-item:nth-child(4n + 3) {
+    background: linear-gradient(90deg,
+        rgba(20, 159, 255, 1) 0%,
+        rgba(17, 122, 255, 1) 100%
+    );
+}
+
+.todo-item input[type="checkbox"] {
+    margin-left: 2rem;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.todo-item label {
+    margin-right: 5px;
+    width: 90%;
+}
+
+.todo-item svg {
+    max-width: 20px;
+    max-height: 20px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    padding: 2px 5px;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    background-color: #EF6262;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
